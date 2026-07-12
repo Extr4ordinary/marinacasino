@@ -764,6 +764,11 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   text-align: initial;
 }
 
+/* Header logo: HD seffaf animasyonlu WebP (panel GIF 200KB limitini asar) */
+[data-mj="custom-header"] [data-mj="logo"] img {
+  content: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino-css@main/logo-anim-1280.webp") !important;
+}
+
 /* Footer nav linkleri: yazi basinda, soluklasarak biten sari cizgi */
 [data-mj="footer-nav-item"] a.sl-navlink {
   display: inline-block !important;
