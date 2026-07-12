@@ -756,9 +756,10 @@ aside a,
   max-width: 200px !important;
   width: 100% !important;
 }
-/* iki rozeti saran alani ortala */
+/* iki rozeti saran alani ortala (flex ve block ikisi icin) */
 *:has(> [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"])) {
   text-align: center !important;
+  justify-content: center !important;
 }
 @media (max-width: 768px) {
   [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) {
