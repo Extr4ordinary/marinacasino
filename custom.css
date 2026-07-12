@@ -738,3 +738,21 @@ aside a,
     display: none !important;
   }
 }
+
+/* App indirme rozetleri (App Store + Google Play) - uygulama linkine gore scope, sponsor/lisans etkilenmez */
+[data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) {
+  display: inline-block !important;
+  width: auto !important;
+  vertical-align: middle !important;
+  margin: 4px 8px !important;
+}
+[data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) [data-mj="widget-fixed-image-banner-container"] {
+  max-width: 200px !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+[data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) img {
+  max-width: 200px !important;
+  width: 100% !important;
+}
