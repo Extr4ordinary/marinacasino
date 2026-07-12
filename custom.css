@@ -763,6 +763,12 @@ main:has([data-mj="widget-fixed-image-banner"] a[href*="uygulama.marinacasinovip
 main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   text-align: initial;
 }
+
+/* UYGULAMA nav linki sadece webde: mobil cekmecede gizle */
+[data-mj="mobile-nav-list"] li:has(a[href*="uygulama.marinacasinovip.com"]),
+[data-mj="mobile-nav-list"] a[href*="uygulama.marinacasinovip.com"] {
+  display: none !important;
+}
 @media (max-width: 768px) {
   [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) {
     margin: 3px 5px !important;
