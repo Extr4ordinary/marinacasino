@@ -764,6 +764,22 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   text-align: initial;
 }
 
+/* Header bakiye: ikon + miktar kucult (web + mobil) */
+[data-mj="header-right"] img[src*="AssetTemplateSite"],
+[data-mj="header-right"] object[data*="AssetTemplateSite"] {
+  width: 16px !important;
+  height: 16px !important;
+  object-fit: contain !important;
+}
+[data-mj="header-right"] div:has(> p[color]) > p:first-child {
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+}
+[data-mj="header-right"] p[color] {
+  font-size: 11px !important;
+  line-height: 1.1 !important;
+}
+
 /* UYGULAMA nav linki sadece webde: mobil cekmecede gizle */
 [data-mj="mobile-nav-list"] li:has(a[href*="uygulama.marinacasinovip.com"]),
 [data-mj="mobile-nav-list"] a[href*="uygulama.marinacasinovip.com"] {
