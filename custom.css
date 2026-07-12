@@ -760,3 +760,12 @@ aside a,
 *:has(> [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"])) {
   text-align: center !important;
 }
+@media (max-width: 768px) {
+  [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) {
+    margin: 3px 5px !important;
+  }
+  [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) [data-mj="widget-fixed-image-banner-container"],
+  [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) img {
+    max-width: 130px !important;
+  }
+}
