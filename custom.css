@@ -756,10 +756,12 @@ aside a,
   max-width: 200px !important;
   width: 100% !important;
 }
-/* iki rozeti saran alani ortala (flex ve block ikisi icin) */
-*:has(> [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"])) {
+/* iki rozeti saran main'i ortala; diger widgetlarin yazilarini koru */
+main:has([data-mj="widget-fixed-image-banner"] a[href*="uygulama.marinacasinovip.com"]) {
   text-align: center !important;
-  justify-content: center !important;
+}
+main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
+  text-align: initial;
 }
 @media (max-width: 768px) {
   [data-mj="widget-fixed-image-banner"]:has(a[href*="uygulama.marinacasinovip.com"]) {
