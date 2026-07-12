@@ -764,6 +764,23 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   text-align: initial;
 }
 
+/* Footer nav linkleri: altina kisa sari cizgi */
+[data-mj="footer-nav-item"] a.sl-navlink {
+  display: inline-block !important;
+  position: relative !important;
+  padding-bottom: 10px !important;
+}
+[data-mj="footer-nav-item"] a.sl-navlink::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 48px !important;
+  height: 3px !important;
+  border-radius: 2px !important;
+  background: #fdbb10 !important;
+}
+
 /* Header bakiye: ikon + miktar kucult (web + mobil) */
 [data-mj="header-right"] span:has(> object[data*="AssetTemplateSite"]) {
   transform: scale(0.88) !important;
