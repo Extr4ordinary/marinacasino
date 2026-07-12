@@ -764,21 +764,31 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   text-align: initial;
 }
 
-/* Footer nav linkleri: altina kisa sari cizgi */
+/* Footer nav linkleri: yazi basinda, soluklasarak biten sari cizgi */
 [data-mj="footer-nav-item"] a.sl-navlink {
   display: inline-block !important;
   position: relative !important;
-  padding-bottom: 10px !important;
 }
 [data-mj="footer-nav-item"] a.sl-navlink::after {
   content: "" !important;
   position: absolute !important;
-  left: 0 !important;
-  bottom: 0 !important;
+  left: 16px !important;
+  top: calc(50% + 0.55em) !important;
   width: 48px !important;
   height: 3px !important;
   border-radius: 2px !important;
-  background: #fdbb10 !important;
+  background: linear-gradient(90deg, #fdbb10 0%, rgba(253, 187, 16, 0) 100%) !important;
+}
+@media (max-width: 768px) {
+  [data-mj="footer-nav"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: max-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  [data-mj="footer-nav-item"] a.sl-navlink { text-align: left !important; }
 }
 
 /* Header bakiye: ikon + miktar kucult (web + mobil) */
