@@ -765,11 +765,9 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
 }
 
 /* Header bakiye: ikon + miktar kucult (web + mobil) */
-[data-mj="header-right"] img[src*="AssetTemplateSite"],
-[data-mj="header-right"] object[data*="AssetTemplateSite"] {
-  width: 16px !important;
-  height: 16px !important;
-  object-fit: contain !important;
+[data-mj="header-right"] span:has(> object[data*="AssetTemplateSite"]) {
+  transform: scale(0.78) !important;
+  transform-origin: center !important;
 }
 [data-mj="header-right"] div:has(> p[color]) > p:first-child {
   font-size: 13px !important;
