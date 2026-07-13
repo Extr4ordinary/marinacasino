@@ -764,6 +764,88 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   text-align: initial;
 }
 
+/* Kisayol butonlari: webde 8 yan yana (6+2 widget), mobilde 4+4 */
+[data-mj="widget-pages"]:has(a[href*="beniara"]) {
+  display: inline-block !important;
+  width: 74.4% !important;
+  vertical-align: top !important;
+}
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) {
+  display: inline-block !important;
+  width: 24.8% !important;
+  vertical-align: top !important;
+}
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-container"],
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-container"] {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-grid"] {
+  grid-template-columns: repeat(6, 1fr) !important;
+  gap: 12px !important;
+}
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-grid"] {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px !important;
+}
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"],
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-item"] {
+  order: 0 !important;
+  display: block !important;
+}
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"] > div,
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"] > div > div,
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"] > div > div > div,
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"] a,
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-item"] > div,
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-item"] > div > div,
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-item"] > div > div > div,
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-item"] a {
+  display: block !important;
+  position: static !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  inset: auto !important;
+  transform: none !important;
+}
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"] img,
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-item"] img {
+  aspect-ratio: 1 / 1 !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+}
+[data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"] p,
+[data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-item"] p {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  [data-mj="widget-pages"]:has(a[href*="beniara"]) {
+    display: block !important;
+    width: 100% !important;
+  }
+  [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-grid"] {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 8px !important;
+  }
+  [data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) {
+    display: block !important;
+    width: calc(50vw - 10px) !important;
+    margin-left: auto !important;
+    margin-top: calc(-25vw - 23.5px) !important;
+  }
+  [data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-grid"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+}
+
 /* Header logo: HD seffaf animasyonlu WebP (panel GIF 200KB limitini asar) */
 [data-mj="custom-header"] [data-mj="logo"] img {
   content: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino-css@main/logo-anim-1280.webp") !important;
