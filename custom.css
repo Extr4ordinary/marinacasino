@@ -825,6 +825,17 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
 [data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) [data-mj="widget-pages-item"] p {
   display: none !important;
 }
+@media (min-width: 769px) {
+  [data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) {
+    padding-left: 12px !important;
+    box-sizing: border-box !important;
+    margin-top: 0 !important;
+  }
+  [data-mj="widget-pages"]:has(a[href*="beniara"]) {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
 @media (max-width: 768px) {
   [data-mj="widget-pages"]:has(a[href*="beniara"]) {
     display: block !important;
