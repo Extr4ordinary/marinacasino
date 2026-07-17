@@ -832,14 +832,17 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   display: none !important;
 }
 @media (min-width: 769px) {
-  [data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) {
-    padding-left: 12px !important;
-    box-sizing: border-box !important;
-    margin-top: 0 !important;
-  }
+  /* Esit 8 item + yanlardan bosluk (sol 40 / sag 40 / gap 12). Sadece web. */
   [data-mj="widget-pages"]:has(a[href*="beniara"]) {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    width: calc(75% - 63px) !important;
+    margin: 0 0 0 40px !important;
+    box-sizing: border-box !important;
+  }
+  [data-mj="widget-pages"]:has(img[alt="Şans Çarkı"]) {
+    width: calc(25% - 29px) !important;
+    margin: 0 40px 0 12px !important;
+    padding-left: 0 !important;
+    box-sizing: border-box !important;
   }
 }
 @media (max-width: 768px) {
