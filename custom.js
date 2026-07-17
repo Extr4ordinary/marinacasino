@@ -1,7 +1,7 @@
 /* Marina Casino - ozel link yonlendirmeleri
    Altyapinin kendi yonlendirmesini ezip, kisayol butonlarini kendi linklerimize gonderir.
    Header Script'e su satirla yuklenir:
-   <script src="https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino-css@main/custom.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@main/custom.js"></script>
 */
 (function () {
   // img alt metni -> gidilecek URL. Yeni override eklemek icin bir satir ekle.

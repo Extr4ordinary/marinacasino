@@ -239,7 +239,7 @@ aside a,
     position: fixed !important;
     inset: 0 !important;
     z-index: 0 !important;
-    background-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino-css@main/web-skin.webp") !important;
+    background-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@main/web-skin.webp") !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -872,11 +872,11 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
 
 /* Header logo: HD seffaf animasyonlu WebP (panel GIF 200KB limitini asar) */
 [data-mj="custom-header"] [data-mj="logo"] img {
-  content: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino-css@main/logo-anim-1280.webp") !important;
+  content: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@main/logo-anim-1280.webp") !important;
 }
 @media (max-width: 768px) {
   [data-mj="custom-header"] [data-mj="logo"] img {
-    content: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino-css@main/logo-anim-640.webp") !important;
+    content: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@main/logo-anim-640.webp") !important;
   }
 }
 
