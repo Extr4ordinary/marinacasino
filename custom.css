@@ -193,6 +193,12 @@
   [data-mj="widget-pages"] [data-mj="widget-pages-item"]:nth-child(1) { order: 1 !important; }
   [data-mj="widget-pages"] [data-mj="widget-pages-item"]:nth-child(3) { order: 2 !important; }
   [data-mj="widget-pages"] [data-mj="widget-pages-item"]:nth-child(2) { order: 3 !important; }
+
+  /* Kategori kartlari (Casino/Canli Casino/Spor/Sanal/E-spor) sadece webde; mobilde tamamen gizle.
+     Iki linki birden iceren widget = kategori widget'i (shortcut/beniara/carka dokunmaz). */
+  [data-mj="widget-pages"]:has(a[href="/tr/livecasino"]):has(a[href="/tr/virtual"]) {
+    display: none !important;
+  }
 }
 
 footer,
