@@ -12,6 +12,14 @@
   // Tek bir yakalama (capture) fazi dinleyici: SPA yeniden render etse de bozulmaz,
   // altyapinin kendi tiklama isleyicisinden ONCE calisir.
   document.addEventListener('click', function (e) {
+    // Hesap menusu > Bonus Talebi -> kendi bonustalep sayfamiz
+    var nav = e.target.closest && e.target.closest('a[href*="t=bonus_offers"]');
+    if (nav) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      window.location.href = 'https://marinaotobonus.com/bonustalep';
+      return;
+    }
     var item = e.target.closest && e.target.closest('[data-mj="widget-pages-item"]');
     if (!item) return;
     var img = item.querySelector('img[alt]');
