@@ -941,9 +941,11 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   }
 }
 
-/* Hesap menusu > Bonuslarim: sadece Bonus Talebi ve Promosyon Kodu kalsin */
-a.sl-navlink[href$="t=bonuses"],
-a.sl-navlink[href$="t=instant_cashback"],
-a.sl-navlink[href$="t=bonuses_history"] {
+/* Hesap menusu > Bonuslarim: sadece Bonus Talebi + Promosyon Kodu kalsin.
+   Yapi: li > div > a.sl-navlink. Her li tek link -> li'yi gizle ki slot komple kalksin,
+   kalan iki oge yukari kaysin ve acilir kutu kuculsun. */
+li:has(a.sl-navlink[href$="t=bonuses"]),
+li:has(a.sl-navlink[href$="t=instant_cashback"]),
+li:has(a.sl-navlink[href$="t=bonuses_history"]) {
   display: none !important;
 }
