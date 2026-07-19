@@ -949,3 +949,12 @@ li:has(a.sl-navlink[href$="t=instant_cashback"]),
 li:has(a.sl-navlink[href$="t=bonuses_history"]) {
   display: none !important;
 }
+
+/* Mobilde oyun acikken alt navigasyon barini gizle (oyun ekranini/krediyi kapatiyor).
+   Oyun acik gostergesi: [data-mj="game-page"]. Bar sinifi generate edilmis (.app-ltr-idt7iu);
+   ponytail: platform rebuild ederse bu sinif degisebilir, o zaman guncelle. */
+@media (max-width: 768px) {
+  body:has([data-mj="game-page"]) .app-ltr-idt7iu {
+    display: none !important;
+  }
+}
