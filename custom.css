@@ -366,9 +366,11 @@ aside a,
   backdrop-filter: blur(22px) saturate(135%) !important;
   -webkit-backdrop-filter: blur(22px) saturate(135%) !important;
   padding: 6px 8px !important;
-  /* kutu icerige gore daralsin: sabit genislikte kalinca sagda fazla bosluk oluyordu (sag boslugu sol ile esitler) */
+  /* kutu icerige gore daralsin + ortala: sabit 1400px'te sola yasliydi, dis sol/sag bosluk esitlenir */
   width: fit-content !important;
   max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   transition: box-shadow 0.2s var(--glass-ease) !important;
 }
 
