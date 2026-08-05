@@ -968,3 +968,11 @@ li:has(a.sl-navlink[href$="t=bonuses_history"]) {
   font-family: Rubik, sans-serif;
   line-height: 18px;
 }
+
+/* Alt menu ikonlari: hepsine tek tip altin degrade (premium, butunluklu gorunum).
+   Ikonlar mask-image oldugu icin arka plani boyayinca sekil o renge burunur; sekiller korunur. */
+[data-mj="bottom-nav-item"] span[style*="mask-image"] {
+  background-image: linear-gradient(180deg, #ffe7a3 0%, #f4c65a 55%, #e0a63a 100%) !important;
+  background-color: transparent !important;
+  filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.4)) !important;
+}
