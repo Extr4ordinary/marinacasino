@@ -997,8 +997,14 @@ li:has(a.sl-navlink[href$="t=bonuses_history"]) {
 html.mj-support-active [data-mj="bottom-nav-item"]:has(span[style*="e4c0aa2d"]) {
   color: #f6c453 !important;
 }
-html.mj-support-active [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"][aria-current="page"]:not(:has(span[style*="e4c0aa2d"])),
-html.mj-support-active [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"].active-link:not(:has(span[style*="e4c0aa2d"])) {
+/* Onceki secili sekmeyi sondur (rota sekmeleri) — derin yol sart kosmadan, yuksek ozgulluk */
+html.mj-support-active [data-mj="bottom-nav-item"][aria-current="page"]:not(:has(span[style*="e4c0aa2d"])),
+html.mj-support-active [data-mj="bottom-nav-item"].active-link:not(:has(span[style*="e4c0aa2d"])) {
+  color: #e9edf5 !important;
+}
+/* ANA SAYFA onceki secili ise (merkez kurali cok ozgul) onu da sondur */
+html.mj-support-active [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"]:has(span[style*="9f1f77ca"])[aria-current="page"],
+html.mj-support-active [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"]:has(span[style*="9f1f77ca"]).active-link {
   color: #e9edf5 !important;
 }
 
