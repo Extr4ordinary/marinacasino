@@ -1001,6 +1001,7 @@ li:has(a.sl-navlink[href$="t=bonuses_history"]) {
   -webkit-mask-size: contain !important; mask-size: contain !important;
   -webkit-mask-repeat: no-repeat !important; mask-repeat: no-repeat !important;
   -webkit-mask-position: center !important; mask-position: center !important;
+  transform: scale(1.18) !important; /* ikonlari biraz buyut (kesmeden) */
 }
 [data-mj="bottom-nav-item"] span[style*="b56598da"] {
   -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@09737a7/icons/canli-casino.png") !important;
