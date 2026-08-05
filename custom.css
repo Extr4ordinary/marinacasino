@@ -975,8 +975,19 @@ li:has(a.sl-navlink[href$="t=bonuses_history"]) {
   filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.4)) !important;
 }
 
-/* Secili (aktif) alt menu sekmesi yazisi: platformun mavisi yerine altin (tema uyumu) */
+/* Secili/etkilesimli alt menu sekmesi yazisi: platformun mavisi yerine altin (tema uyumu).
+   CANLI DESTEK route degil (span) -> aria-current almaz, o yuzden hover/focus/active de kapsanir. */
 [data-mj="bottom-nav-item"][aria-current="page"],
-[data-mj="bottom-nav-item"].active-link {
+[data-mj="bottom-nav-item"].active-link,
+[data-mj="bottom-nav-item"]:hover,
+[data-mj="bottom-nav-item"]:focus,
+[data-mj="bottom-nav-item"]:focus-within,
+[data-mj="bottom-nav-item"]:active {
+  color: #f6c453 !important;
+}
+
+/* Merkez ANA SAYFA aktifken de altin (merkez kuralinin yuksek ozgullugunu gecmek icin) */
+[data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"]:has(span[style*="9f1f77ca"])[aria-current="page"],
+[data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"]:has(span[style*="9f1f77ca"]).active-link {
   color: #f6c453 !important;
 }
