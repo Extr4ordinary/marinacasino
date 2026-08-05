@@ -8,22 +8,17 @@
   display: flex !important;
   align-items: stretch !important;
   justify-content: space-evenly !important;
-  border-top: 1px solid rgba(17, 105, 161, 1) !important;
-  border-radius: 3px !important;
-  background:
-    radial-gradient(circle at 20% 10%, rgb(65 125 154 / 20%), transparent 34%),
-    radial-gradient(circle at 85% 20%, rgba(70, 130, 255, 0.18), transparent 32%),
-    radial-gradient(circle at 50% 100%, rgb(17 57 83), transparent 42%),
-    rgba(5, 14, 12, 0.72) !important;
+  /* Cam efekti: buzlu koyu lacivert zemin, ust kavis, ince beyaz kenar, yumusak golge */
+  border-top: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 20px 20px 0 0 !important;
+  background: linear-gradient(180deg, rgba(14, 30, 60, 0.42), rgba(6, 14, 34, 0.66)) !important;
   box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.34),
-    0 0 28px rgba(0, 170, 87, 0.24),
-    inset 0 1px 0 rgba(255, 255, 255, 0.16),
-    inset 0 0 26px rgb(71 143 186 / 10%) !important;
-  backdrop-filter: blur(16px) saturate(1.35) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(1.35) !important;
+    0 -10px 44px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.20) !important;
+  backdrop-filter: blur(26px) saturate(1.5) !important;
+  -webkit-backdrop-filter: blur(26px) saturate(1.5) !important;
   transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease !important;
-  padding: 11px 6px !important;
+  padding: 12px 8px 14px !important;
 }
 
 [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"] {
@@ -42,12 +37,15 @@
   color: #FFFFFF !important;
   font-size: 8px !important;
   line-height: 8px !important;
+  /* Merkez: cam vurgu kutusu */
+  background: linear-gradient(180deg, rgba(120, 170, 255, 0.22), rgba(255, 255, 255, 0.06)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
   box-shadow:
-    0 18px 42px rgba(0, 0, 0, 0.36),
-    0 0 28px rgb(78 164 181 / 32%),
-    0 0 48px rgba(70, 130, 255, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.22) !important;
-  border-color: rgb(75 120 165 / 62%) !important;
+    0 12px 30px rgba(0, 0, 0, 0.4),
+    0 0 26px rgba(120, 170, 255, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
