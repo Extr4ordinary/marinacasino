@@ -992,6 +992,16 @@ li:has(a.sl-navlink[href$="t=bonuses_history"]) {
   color: #f6c453 !important;
 }
 
+/* CANLI DESTEK sohbet (route degil) tiklaninca "secili" gorunsun. html.mj-support-active class'ini header JS ekliyor:
+   sohbet sekmesi altin olur, o an aria-current olan onceki sekmenin altini soner (beyaza doner). */
+html.mj-support-active [data-mj="bottom-nav-item"]:has(span[style*="e4c0aa2d"]) {
+  color: #f6c453 !important;
+}
+html.mj-support-active [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"][aria-current="page"]:not(:has(span[style*="e4c0aa2d"])),
+html.mj-support-active [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"].active-link:not(:has(span[style*="e4c0aa2d"])) {
+  color: #e9edf5 !important;
+}
+
 /* Ozel ikon seti: ANA SAYFA (9f1f77ca) haric 4 ikonu yeni beyaz-mask ikonlarla degistir.
    Mask oldugu icin ustteki altin gradient boyar. Ikonlar SHA-pinli (immutable, purge yok). */
 [data-mj="bottom-nav-item"] span[style*="b56598da"],
