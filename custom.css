@@ -954,3 +954,17 @@ li:has(a.sl-navlink[href$="t=instant_cashback"]),
 li:has(a.sl-navlink[href$="t=bonuses_history"]) {
   display: none !important;
 }
+
+/* Arama paneli bos-durum basligi: "Find Your Favorite Game" -> "Oyun Ara".
+   JS ile textContent degistirince React render'i cokuyor (arama bozuluyordu),
+   o yuzden orijinal metni gizleyip ::after ile Turkce bastiriyoruz (React'e dokunmadan).
+   Sonuc metinleri (No Result / Result Not Found) React'in kontrolunde -> onlara dokunmuyoruz. */
+.app-ltr-12yvva5 h3 { font-size: 0 !important; }
+.app-ltr-12yvva5 h3::after {
+  content: "Oyun Ara";
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  font-family: Rubik, sans-serif;
+  line-height: 18px;
+}
