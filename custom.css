@@ -991,3 +991,30 @@ li:has(a.sl-navlink[href$="t=bonuses_history"]) {
 [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > [data-mj="bottom-nav-item"]:has(span[style*="9f1f77ca"]).active-link {
   color: #f6c453 !important;
 }
+
+/* Ozel ikon seti: ANA SAYFA (9f1f77ca) haric 4 ikonu yeni beyaz-mask ikonlarla degistir.
+   Mask oldugu icin ustteki altin gradient boyar. Ikonlar SHA-pinli (immutable, purge yok). */
+[data-mj="bottom-nav-item"] span[style*="b56598da"],
+[data-mj="bottom-nav-item"] span[style*="8c4b3e90"],
+[data-mj="bottom-nav-item"] span[style*="c1e60002"],
+[data-mj="bottom-nav-item"] span[style*="e4c0aa2d"] {
+  -webkit-mask-size: contain !important; mask-size: contain !important;
+  -webkit-mask-repeat: no-repeat !important; mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important; mask-position: center !important;
+}
+[data-mj="bottom-nav-item"] span[style*="b56598da"] {
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@4b4b9b4/icons/canli-casino.png") !important;
+  mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@4b4b9b4/icons/canli-casino.png") !important;
+}
+[data-mj="bottom-nav-item"] span[style*="8c4b3e90"] {
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@4b4b9b4/icons/casino.png") !important;
+  mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@4b4b9b4/icons/casino.png") !important;
+}
+[data-mj="bottom-nav-item"] span[style*="c1e60002"] {
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@4b4b9b4/icons/spor.png") !important;
+  mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@4b4b9b4/icons/spor.png") !important;
+}
+[data-mj="bottom-nav-item"] span[style*="e4c0aa2d"] {
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@4b4b9b4/icons/canli-destek.png") !important;
+  mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@4b4b9b4/icons/canli-destek.png") !important;
+}
