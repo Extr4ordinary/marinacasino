@@ -835,15 +835,16 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   display: none !important;
 }
 @media (min-width: 769px) {
-  /* Esit 8 item. Dis bosluk eski 40px, ama item arasi gap 4px -> butonlar buyuk, esit dar boslukta. Sadece web. */
+  /* Kisayollar tam-genislik MAIN'in altinda (icerik kolonu max 1500px disinda). % kullaninca zoom-out'ta
+     sinirsiz buyuyordu. min(100%,1500px) ile icerik kolonuna sabitle + ortala (banner ile hizali). */
   [data-mj="widget-pages"]:has(a[href*="beniara"]) {
-    width: calc(75% - 61px) !important;
-    margin: 0 0 0 40px !important;
+    width: calc(min(100%, 1500px) * 0.75 - 61px) !important;
+    margin: 0 0 0 max(40px, calc((100% - 1500px) / 2 + 40px)) !important;
     box-sizing: border-box !important;
   }
   [data-mj="widget-pages"]:has(a[href*="vipclub"]) {
-    width: calc(25% - 23px) !important;
-    margin: 0 40px 0 4px !important;
+    width: calc(min(100%, 1500px) * 0.25 - 23px) !important;
+    margin: 0 max(40px, calc((100% - 1500px) / 2 + 40px)) 0 4px !important;
     padding-left: 0 !important;
     box-sizing: border-box !important;
   }
