@@ -792,11 +792,11 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
 }
 [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-grid"] {
   grid-template-columns: repeat(6, 1fr) !important;
-  gap: 8px !important;
+  gap: 4px !important;
 }
 [data-mj="widget-pages"]:has(a[href*="vipclub"]) [data-mj="widget-pages-grid"] {
   grid-template-columns: repeat(2, 1fr) !important;
-  gap: 8px !important;
+  gap: 4px !important;
 }
 [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"],
 [data-mj="widget-pages"]:has(a[href*="vipclub"]) [data-mj="widget-pages-item"] {
@@ -835,15 +835,15 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   display: none !important;
 }
 @media (min-width: 769px) {
-  /* Esit 8 item, yan boslugu 40->12 kisildi -> butonlar buyudu (M=12, gap=8). Sadece web. */
+  /* Esit 8 item. Dis bosluk eski 40px, ama item arasi gap 4px -> butonlar buyuk, esit dar boslukta. Sadece web. */
   [data-mj="widget-pages"]:has(a[href*="beniara"]) {
-    width: calc(75% - 20px) !important;
-    margin: 0 0 0 12px !important;
+    width: calc(75% - 61px) !important;
+    margin: 0 0 0 40px !important;
     box-sizing: border-box !important;
   }
   [data-mj="widget-pages"]:has(a[href*="vipclub"]) {
-    width: calc(25% - 12px) !important;
-    margin: 0 12px 0 8px !important;
+    width: calc(25% - 23px) !important;
+    margin: 0 40px 0 4px !important;
     padding-left: 0 !important;
     box-sizing: border-box !important;
   }
