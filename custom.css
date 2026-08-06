@@ -835,35 +835,42 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   display: none !important;
 }
 @media (min-width: 769px) {
-  /* Esit 8 item + yanlardan bosluk (sol 40 / sag 40 / gap 12). Sadece web. */
+  /* Esit 8 item, yan boslugu 40->12 kisildi -> butonlar buyudu (M=12, gap=8). Sadece web. */
   [data-mj="widget-pages"]:has(a[href*="beniara"]) {
-    width: calc(75% - 63px) !important;
-    margin: 0 0 0 40px !important;
+    width: calc(75% - 20px) !important;
+    margin: 0 0 0 12px !important;
     box-sizing: border-box !important;
   }
   [data-mj="widget-pages"]:has(a[href*="vipclub"]) {
-    width: calc(25% - 29px) !important;
-    margin: 0 40px 0 12px !important;
+    width: calc(25% - 12px) !important;
+    margin: 0 12px 0 8px !important;
     padding-left: 0 !important;
     box-sizing: border-box !important;
   }
 }
 @media (max-width: 768px) {
-  /* Mobilde 3 sutun -> butonlar ~1.5x buyuk. Duzen: 6'li = 3+3, 2'li altta = 2 (col3 bos).
-     Ikisi de tam genislik + ayni padding/gap -> sutunlar hizali, boyutlar esit, kararli (negatif margin yok). */
-  [data-mj="widget-pages"]:has(a[href*="beniara"]),
-  [data-mj="widget-pages"]:has(a[href*="vipclub"]) {
+  /* Mobilde 4+4. 6'li widget 4 sutun (row1:4, row2:2). 2'li widget (Slot+VIP) 2. siranin sagina cekilir.
+     Padding/gap kisik -> butonlar buyuk. buton W=(100vw-30)/4=25vw-7.5px, H=W*534/460 ~ 29vw. */
+  [data-mj="widget-pages"]:has(a[href*="beniara"]) {
     display: block !important;
     width: 100% !important;
     margin: 0 !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding: 0 6px !important;
     box-sizing: border-box !important;
   }
-  [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-grid"],
+  [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-grid"] {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 6px !important;
+  }
+  [data-mj="widget-pages"]:has(a[href*="vipclub"]) {
+    display: block !important;
+    width: calc(50vw - 9px) !important;
+    margin: calc(-29vw + 9px) 6px 0 auto !important; /* bir satir yukari cek -> 2. sira, sag */
+    box-sizing: border-box !important;
+  }
   [data-mj="widget-pages"]:has(a[href*="vipclub"]) [data-mj="widget-pages-grid"] {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 8px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px !important;
   }
 }
 
