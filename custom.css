@@ -824,7 +824,7 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
 }
 [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"] img,
 [data-mj="widget-pages"]:has(a[href*="vipclub"]) [data-mj="widget-pages-item"] img {
-  aspect-ratio: 416 / 491 !important; /* butonlarin gercek orani -> yan bosluk yok, tam dolar, buyuk + esit */
+  aspect-ratio: 460 / 534 !important; /* butonlarin gercek orani -> yan bosluk yok, tam dolar, buyuk + esit */
   object-fit: contain !important;
   border-radius: 0 !important;
   width: 100% !important;
