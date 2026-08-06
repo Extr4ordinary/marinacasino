@@ -849,26 +849,20 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   }
 }
 @media (max-width: 768px) {
-  [data-mj="widget-pages"]:has(a[href*="beniara"]) {
+  /* Mobilde 3 sutun -> butonlar ~1.5x buyuk. Duzen: 6'li = 3+3, 2'li altta = 2 (col3 bos).
+     Ikisi de tam genislik + ayni padding/gap -> sutunlar hizali, boyutlar esit, kararli (negatif margin yok). */
+  [data-mj="widget-pages"]:has(a[href*="beniara"]),
+  [data-mj="widget-pages"]:has(a[href*="vipclub"]) {
     display: block !important;
     width: 100% !important;
+    margin: 0 !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
     box-sizing: border-box !important;
   }
-  [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-grid"] {
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 8px !important;
-  }
-  [data-mj="widget-pages"]:has(a[href*="vipclub"]) {
-    display: block !important;
-    width: calc(50vw - 14px) !important;
-    margin-left: auto !important;
-    margin-right: 10px !important;
-    margin-top: calc(-25vw - 23.5px) !important;
-  }
+  [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-grid"],
   [data-mj="widget-pages"]:has(a[href*="vipclub"]) [data-mj="widget-pages-grid"] {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 8px !important;
   }
 }
