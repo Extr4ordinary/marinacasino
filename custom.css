@@ -824,7 +824,7 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
 }
 [data-mj="widget-pages"]:has(a[href*="beniara"]) [data-mj="widget-pages-item"] img,
 [data-mj="widget-pages"]:has(a[href*="vipclub"]) [data-mj="widget-pages-item"] img {
-  aspect-ratio: 460 / 529 !important; /* butonlarin gercek orani -> yan bosluk yok, tam dolar, buyuk + esit */
+  aspect-ratio: 457 / 595 !important; /* butonlarin gercek orani -> yan bosluk yok, tam dolar, buyuk + esit */
   object-fit: contain !important;
   border-radius: 0 !important;
   width: 100% !important;
@@ -865,7 +865,7 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   [data-mj="widget-pages"]:has(a[href*="vipclub"]) {
     display: block !important;
     width: calc(50vw - 9px) !important;
-    margin: calc(-29vw + 9px) 6px 0 auto !important; /* bir satir yukari cek -> 2. sira, sag */
+    margin: calc(-32.5vw + 10px) 6px 0 auto !important; /* bir satir yukari cek -> 2. sira, sag */
     box-sizing: border-box !important;
   }
   [data-mj="widget-pages"]:has(a[href*="vipclub"]) [data-mj="widget-pages-grid"] {
