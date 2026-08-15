@@ -1038,3 +1038,62 @@ html.mj-support-active [data-mj="bottom-nav"] .app-ltr-idt7iu .app-ltr-ja3k2i > 
   -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@09737a7/icons/canli-destek.png") !important;
   mask-image: url("https://cdn.jsdelivr.net/gh/Extr4ordinary/marinacasino@09737a7/icons/canli-destek.png") !important;
 }
+
+/* ===== Promosyon filtre sekmeleri: alt cizgi -> altin hap butonlar ===== */
+ul[data-mj="promotions-tabs"] {
+  gap: 10px !important;
+  justify-content: flex-start !important;
+  height: auto !important;
+  padding: 4px 0 !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scrollbar-width: none !important;
+}
+ul[data-mj="promotions-tabs"]::-webkit-scrollbar { display: none !important; }
+ul[data-mj="promotions-tabs"] > li[data-mj="promotions-tabs"] {
+  flex: 0 0 auto !important;
+  width: auto !important;
+}
+ul[data-mj="promotions-tabs"] button[data-mj="promotions-tabs"] {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 22px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 999px !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03)) !important;
+  color: #d7dced !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2px !important;
+  white-space: nowrap !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease !important;
+}
+ul[data-mj="promotions-tabs"] button[data-mj="promotions-tabs"]:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05)) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+}
+ul[data-mj="promotions-tabs"] button[data-mj="promotions-tabs"].active,
+ul[data-mj="promotions-tabs"] button[data-mj="promotions-tabs"][aria-current="page"] {
+  /* site sarisi: KAYIT / Para Yatir butonu (#fdbb10) */
+  background: linear-gradient(180deg, #ffd45e 0%, #fdbb10 55%, #e29e04 100%) !important;
+  border-color: rgba(253, 187, 16, 0.85) !important;
+  color: #222b4a !important;
+  font-weight: 700 !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 4px 18px rgba(253, 187, 16, 0.32) !important;
+}
+@media (max-width: 768px) {
+  ul[data-mj="promotions-tabs"] {
+    gap: 8px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  ul[data-mj="promotions-tabs"] button[data-mj="promotions-tabs"] {
+    padding: 9px 13px !important;
+    font-size: 12.5px !important;
+    letter-spacing: 0 !important;
+  }
+}
