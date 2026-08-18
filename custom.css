@@ -855,7 +855,7 @@ main > *:not(:has(a[href*="uygulama.marinacasinovip.com"])) {
   [data-mj="widget-pages"]:has(a[href*="beniara"]) {
     display: block !important;
     width: 100% !important;
-    margin: 0 !important;
+    margin: 14px 0 0 !important; /* banner ile arasina bosluk */
     padding: 0 6px !important;
     box-sizing: border-box !important;
   }
