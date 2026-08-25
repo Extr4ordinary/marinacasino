@@ -1100,8 +1100,43 @@ ul[data-mj="promotions-tabs"] button[data-mj="promotions-tabs"][aria-current="pa
 
 /* ===== Promosyon detay: kural metninin arkasindaki pageskin blurlansin ===== */
 [data-mj="promotion-details"] > div:not([data-mj="promotion-header"]) {
+  background: rgba(5, 12, 38, 0.5) !important;
   backdrop-filter: blur(2px) !important;
   -webkit-backdrop-filter: blur(2px) !important;
   padding: 24px !important;
   line-height: 1.75 !important;
+}
+
+/* Bolum arasi ayirici + bosluk (baslik gruplari kolay okunsun) */
+[data-mj="promotion-details"] li:has(strong) {
+  margin-top: 16px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.10) !important;
+}
+[data-mj="promotion-details"] li:first-child:has(strong) {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: 0 !important;
+}
+[data-mj="promotion-details"] li p:has(strong) {
+  padding-bottom: 4px !important;
+}
+
+/* ===== Web: kisayol butonlari ile kategori kartlarinin yeri degisti ===== */
+@media (min-width: 769px) {
+  main[data-mj="page-content"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-content: flex-start !important;
+  }
+  main[data-mj="page-content"] > * { order: 3; flex: 0 0 100%; max-width: 100%; }
+  main[data-mj="page-content"] > [data-mj="widget-banner-container"] { order: 0; }
+  main[data-mj="page-content"] > section[data-mj="widget-pages"]:has(a[href*="/tr/virtual"]) { order: 1; }
+  main[data-mj="page-content"] > [data-mj="widget-bet-win-container"] { order: 2; }
+  /* yan yana duran bloklar tam genislik almasin */
+  main[data-mj="page-content"] > section[data-mj="widget-pages"]:has(a[href*="beniara"]),
+  main[data-mj="page-content"] > section[data-mj="widget-pages"]:has(a[href*="vipclub"]),
+  main[data-mj="page-content"] > section[data-mj="widget-fixed-image-banner"]:nth-last-child(-n+2) {
+    flex: 0 0 auto; width: auto;
+  }
 }
