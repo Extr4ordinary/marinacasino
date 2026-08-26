@@ -1139,6 +1139,9 @@ ul[data-mj="promotions-tabs"] button[data-mj="promotions-tabs"][aria-current="pa
   main[data-mj="page-content"] > section[data-mj="widget-fixed-image-banner"]:nth-last-child(-n+2) {
     flex: 0 0 auto; width: auto;
   }
+  /* app store rozetleri ortada kalsin */
+  main[data-mj="page-content"] > section[data-mj="widget-fixed-image-banner"]:nth-last-child(2) { margin-left: auto !important; }
+  main[data-mj="page-content"] > section[data-mj="widget-fixed-image-banner"]:nth-last-child(1) { margin-right: auto !important; }
   /* son kazananlar ile arasina bosluk */
   main[data-mj="page-content"] > section[data-mj="widget-pages"]:has(a[href*="beniara"]),
   main[data-mj="page-content"] > section[data-mj="widget-pages"]:has(a[href*="vipclub"]) {
